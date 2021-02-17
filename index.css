@@ -1,0 +1,85 @@
+@import "~bootstrap/scss/bootstrap";
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+h1 {
+  font-size: 1.7rem;
+  text-align: center;
+  margin: 30px 0;
+}
+
+h1 > span {
+  font-size: 1.1rem;
+}
+
+#plotWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#yAxisLabel {
+  fill: #000;
+  font-size: 12px;
+  font-family: sans-serif;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#tooltip {
+  background: rgba(110, 148, 22, .7);
+  font-size: .7rem;
+  padding: .5rem;
+  max-width: 150px;
+  border-radius: 5px;
+  animation-name: fadeIn;
+  animation-duration: .25s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+
+.instructions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.iText {
+  font-size: .7rem;
+  font-weight: bold;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#blueSq {
+  flex-shrink: 0;
+  display: block;
+  background-color: rgba(32, 76, 199, .9);
+  width: 19px;
+  height: 19px;
+  margin-left: 10px;
+}
+
+#orangeSq {
+  flex-shrink: 0;
+  display: block;
+  background-color: rgba(255, 166, 0, .9);
+  width: 19px;
+  height: 19px;
+  margin-left: 10px;
+}
